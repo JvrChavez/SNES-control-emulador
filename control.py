@@ -19,8 +19,6 @@ while True:
     if Keys[pygame.K_j]:screen.blit(crosshair,(198,84))
     x=-1 if Keys[pygame.K_a] else 1 if Keys[pygame.K_d]else 0
     y=-1 if Keys[pygame.K_w] else 1 if Keys[pygame.K_s]else 0
-    #print(x)
-    #print(y)
     for events in pygame.event.get():
         if events.type==pygame.QUIT:
             pygame.quit()
